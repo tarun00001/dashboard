@@ -1,0 +1,16 @@
+.profile{ 
+    margin-top: 20px; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.device{  
+    margin-top: 20px;
+}
+
+.card-body {
+    box-shadow: 12px 14px 17px 4px rgba(0,0,0,0.78);
+    -webkit-box-shadow: 12px 14px 17px 4px rgba(0,0,0,0.78);
+    -moz-box-shadow: 12px 14px 17px 4px rgba(0,0,0,0.78);
+}
