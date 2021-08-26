@@ -1,0 +1,7 @@
+.settings{  
+        align-items: center;
+        justify-content: center;
+        /* text-align: center; */
+        flex-wrap: wrap;
+        margin-top: 10%;
+    }

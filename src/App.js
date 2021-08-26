@@ -6,6 +6,8 @@ import Profile from "./pages/Profile";
 import Home from "./pages/Home";
 import Sidebar from "./components/Sidebar";
 import NotFound from "./components/NotFound";
+import Settings from "./pages/Settings";
+import Search from "./pages/Search";
 import { Container, Row, Col } from "react-bootstrap";
 // import "./App.css";
 
@@ -38,6 +40,12 @@ export default class App extends Component {
           )} />
           <Route path="/Profile" exact render={()=>(
               cookies.get("token") ? (<Profile/>) : (alert("You must be log in to visit this page."), (<Redirect to="/Login"/>))
+          )} />
+          <Route path="/Settings" exact render={()=>(
+              cookies.get("token") ? (<Settings/>) : (alert("You must be log in to visit this page."), (<Redirect to="/Login"/>))
+          )} />
+          <Route path="/Search" exact render={()=>(
+              cookies.get("token") ? (<Search/>) : (alert("You must be log in to visit this page."), (<Redirect to="/Login"/>))
           )} />
           </Col>
           <Route path="*" component={NotFound}/>

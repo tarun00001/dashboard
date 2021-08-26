@@ -19,7 +19,7 @@ export default class RegisterForm extends Component {
       emailError: "",
       passwordError: "",
       phoneError: "",
-      countryError: "",
+      countryError: "", 
       genderError: "",
     };
   }
@@ -67,7 +67,7 @@ export default class RegisterForm extends Component {
     let passwordError = "";
     let phoneError = "";
     let countryError = "";
-    let genderError = "";
+    let genderError = ""; 
  
     if(!this.state.firstName){  
       firstNameError = "First Name cannot be blank"

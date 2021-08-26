@@ -36,9 +36,9 @@ class Sidebar extends Component {
 
   render() {
     return (
-      <  >
+      <>
    
-<button className="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+<button style={{ marginTop: "10px" }} className="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
   toggle
 </button>
 
@@ -57,12 +57,12 @@ class Sidebar extends Component {
                   return [
                     <li className="active" style={{}} >
                       <NavLink className="nav-link" to="/Login">
-                     <span className="log"><i className="fas fa-sign-in-alt"></i> Login</span>
+                     <span className="dis"><i className="fas fa-sign-in-alt"></i> Login</span>
                       </NavLink>
                     </li>,
                     <li className="active">
                       <NavLink className="nav-link" to="/Signup">
-                      <span className="reg"><i className="fas fa-user-plus"></i> Register</span>
+                      <span className="dis"><i className="fas fa-user-plus"></i> Register</span>
                       </NavLink>
                     </li>
                   ];
@@ -70,12 +70,22 @@ class Sidebar extends Component {
                   return [
                     <li className="active">
                       <NavLink className="nav-link" to="/">
-                      <span className="hom"><i className="fas fa-home"></i> Home</span>
+                      <span className="pro"><i className="fas fa-home"></i> Home</span>
                       </NavLink>
                     </li>,
                     <li className="active">
                       <NavLink className="nav-link" to="/Profile">
                       <span className="pro"> <i className="far fa-id-card"></i> Profile</span>
+                      </NavLink>
+                    </li>,
+                    <li className="active">
+                      <NavLink className="nav-link" to="/Settings">
+                      <span className="pro"> <i class="fas fa-cog"></i> Settings</span>
+                      </NavLink>
+                    </li>,
+                    <li className="active">
+                      <NavLink className="nav-link" to="/Search">
+                      <span className="pro"> <i class="fas fa-search"></i> Search</span>
                       </NavLink>
                     </li>,
                     <li className="nav-link active logo"
@@ -94,8 +104,6 @@ class Sidebar extends Component {
       </>
     )
   }
-
- 
 }
 
 export default withRouter(Sidebar);

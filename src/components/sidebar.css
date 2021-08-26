@@ -130,15 +130,7 @@ ul ul a {
     flex-wrap: wrap;
 }
 
- .reg{  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
- }
-
- .log{  
+ .dis{  
     display: flex;
     align-items: center;
     justify-content: center;
@@ -153,9 +145,3 @@ ul ul a {
     flex-wrap: wrap;
  }
 
- .hom{  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
- }
